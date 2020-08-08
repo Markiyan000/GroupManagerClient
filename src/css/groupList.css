@@ -1,0 +1,17 @@
+#groupList {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 10px;
+}
+
+#group {
+    display: table-cell;
+    background-color: blue;
+    border: 3px solid black;
+    text-align: center;
+}
+
+#group:hover {
+    background-color: white;
+}
