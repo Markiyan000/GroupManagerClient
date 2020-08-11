@@ -1,5 +1,5 @@
 import * as React from "react";
-import './css/groupList.css';
+import '../css/groupList.css';
 
 class GroupList extends React.Component {
 
@@ -9,10 +9,6 @@ class GroupList extends React.Component {
         this.state = {
             groups: []
         }
-    }
-
-    formatDate(array) {
-        return array[2] + '.' + array[1] + '.' + array[0];
     }
 
     async componentDidMount() {

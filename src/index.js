@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
-import GroupList from "./GroupList";
-import './css/main.css'
+import './css/main.css';
+import Main from "./component/Main";
 
 ReactDOM.render(
-  <GroupList />,
+  <Router>
+      <Switch>
+          <Route path='/' exact={true} component={Main}/>
+      </Switch>
+  </Router>,
   document.getElementById('root')
 );
 

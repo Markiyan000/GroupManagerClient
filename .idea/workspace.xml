@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6f66d26-1199-48b1-8d42-4eadbb157b12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/css/groupList.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/Main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GroupList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/GroupList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GroupList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GroupList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -40,6 +46,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\marki\WebstormProjects\group-manager-client\src\component" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -79,7 +90,8 @@
       <option name="presentableId" value="Default" />
       <updated>1596909698920</updated>
       <workItem from="1596909703785" duration="656000" />
-      <workItem from="1596911081760" duration="3537000" />
+      <workItem from="1596911081760" duration="3827000" />
+      <workItem from="1597134086144" duration="3016000" />
     </task>
     <servers />
   </component>
@@ -87,21 +99,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1343" height="372" key="GridCell.Tab.0.bottom" timestamp="1596913123931">
+    <state width="1343" height="372" key="GridCell.Tab.0.bottom" timestamp="1597138919726">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1343" height="372" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596913123931" />
-    <state width="1343" height="372" key="GridCell.Tab.0.center" timestamp="1596913123931">
+    <state width="1343" height="372" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597138919726" />
+    <state width="1343" height="372" key="GridCell.Tab.0.center" timestamp="1597138919725">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1343" height="372" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596913123931" />
-    <state width="1343" height="372" key="GridCell.Tab.0.left" timestamp="1596913123929">
+    <state width="1343" height="372" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597138919725" />
+    <state width="1343" height="372" key="GridCell.Tab.0.left" timestamp="1597138919725">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1343" height="372" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596913123929" />
-    <state width="1343" height="372" key="GridCell.Tab.0.right" timestamp="1596913123931">
+    <state width="1343" height="372" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597138919725" />
+    <state width="1343" height="372" key="GridCell.Tab.0.right" timestamp="1597138919725">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1343" height="372" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596913123931" />
+    <state width="1343" height="372" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597138919725" />
   </component>
 </project>
