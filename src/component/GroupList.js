@@ -1,5 +1,6 @@
 import * as React from "react";
 import '../css/groupList.css';
+import Header from "./Header";
 
 class GroupList extends React.Component {
 
@@ -22,14 +23,17 @@ class GroupList extends React.Component {
     render() {
 
         return (
-            <div id='groupList'>
-                {this.state.groups.map(group => {
-                    return (
-                        <div key={group.id} id='group'>
-                            <h2>{group.name}</h2>
-                        </div>
-                    )
-                })}
+            <div>
+                <Header />
+                <div id='groupList'>
+                    {this.state.groups.map(group => {
+                        return (
+                            <div key={group.id} id='group'>
+                                <h2>{group.name}</h2>
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
         )
     }
