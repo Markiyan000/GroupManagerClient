@@ -1,6 +1,7 @@
 import * as React from "react";
 import '../css/groupList.css';
 import Header from "./Header";
+import {Link} from "react-router-dom";
 
 class GroupList extends React.Component {
 
@@ -29,7 +30,7 @@ class GroupList extends React.Component {
                     {this.state.groups.map(group => {
                         return (
                             <div key={group.id} id='group'>
-                                <h2>{group.name}</h2>
+                                <Link to={'/groups/' + group.id}><h2>{group.name}</h2></Link>
                             </div>
                         )
                     })}

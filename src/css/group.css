@@ -1,0 +1,14 @@
+#groupInfo span {
+    display: block;
+    margin-left: 20px;
+    line-height: 2.0em;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#name {
+    margin: auto;
+    width: 15%;
+    padding: 10px;
+    font-size: 35px;
+}

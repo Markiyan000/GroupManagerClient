@@ -7,11 +7,21 @@
 
 #group {
     display: table-cell;
-    background-color: blue;
+    background-color: #85C1E9;
     border: 3px solid black;
     text-align: center;
 }
 
 #group:hover {
-    background-color: white;
+    background-color: #F2F3F4;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
