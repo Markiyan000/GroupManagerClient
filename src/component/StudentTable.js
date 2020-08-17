@@ -1,6 +1,6 @@
 import * as React from "react";
-import Header from "./Header";
 import StudentRow from "./StudentRow";
+import "../css/studentTable.css";
 
 class StudentTable extends React.Component {
 

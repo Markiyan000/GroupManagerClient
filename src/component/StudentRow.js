@@ -1,5 +1,4 @@
 import * as React from "react";
-import Header from "./Header";
 
 class StudentRow extends React.Component {
 
