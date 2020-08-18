@@ -7,6 +7,8 @@ import './css/main.css';
 import Main from "./component/Main";
 import GroupList from "./component/GroupList";
 import Group from "./component/Group";
+import TeacherTable from "./component/TeacherTable";
+import Teacher from "./component/Teacher";
 
 ReactDOM.render(
   <Router>
@@ -14,6 +16,8 @@ ReactDOM.render(
           <Route path='/' exact={true} component={Main}/>
           <Route path='/groups' exact={true} component={GroupList}/>
           <Route path='/groups/:id' exact={true} component={Group} />
+          <Route path='/teachers' exact={true} component={TeacherTable}/>
+          <Route path='/teachers/:id' exact={true} component={Teacher}/>
       </Switch>
   </Router>,
   document.getElementById('root')

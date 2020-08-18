@@ -22,12 +22,13 @@ class GroupList extends React.Component {
     }
 
     render() {
+        const groups = this.state.groups;
 
         return (
             <div>
                 <Header />
                 <div id='groupList'>
-                    {this.state.groups.map(group => {
+                    {groups.map(group => {
                         return (
                             <div key={group.id} id='group'>
                                 <Link to={'/groups/' + group.id}><h2>{group.name}</h2></Link>

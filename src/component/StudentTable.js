@@ -1,6 +1,6 @@
 import * as React from "react";
 import StudentRow from "./StudentRow";
-import "../css/studentTable.css";
+import "../css/table.css";
 
 class StudentTable extends React.Component {
 

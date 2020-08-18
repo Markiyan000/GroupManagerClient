@@ -2,6 +2,7 @@ import * as React from "react";
 import Header from "./Header";
 import '../css/group.css';
 import StudentTable from "./StudentTable";
+import AddStudent from "./AddStudent";
 
 class Group extends React.Component {
     constructor(props) {
@@ -43,6 +44,7 @@ class Group extends React.Component {
                     <span>Curator: {curator.firstName + ' ' + curator.lastName}</span>
                 </div>
                 <StudentTable students={students} />
+                <AddStudent groupId={this.state.group.id} />
             </div>
         );
     }

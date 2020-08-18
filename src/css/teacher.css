@@ -1,0 +1,7 @@
+div span{
+    display: block;
+    margin-left: 20px;
+    line-height: 2.0em;
+    font-size: 20px;
+    font-weight: 500;
+}
