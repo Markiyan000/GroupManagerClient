@@ -9,6 +9,7 @@ import GroupList from "./component/GroupList";
 import Group from "./component/Group";
 import TeacherTable from "./component/TeacherTable";
 import Teacher from "./component/Teacher";
+import AddStudent from "./component/AddStudent";
 
 ReactDOM.render(
   <Router>
@@ -18,6 +19,7 @@ ReactDOM.render(
           <Route path='/groups/:id' exact={true} component={Group} />
           <Route path='/teachers' exact={true} component={TeacherTable}/>
           <Route path='/teachers/:id' exact={true} component={Teacher}/>
+          <Route path='/addStudent/:id' exact={true} component={AddStudent} />
       </Switch>
   </Router>,
   document.getElementById('root')

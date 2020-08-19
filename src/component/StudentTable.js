@@ -4,10 +4,6 @@ import "../css/table.css";
 
 class StudentTable extends React.Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     render() {
 
         const students = this.props.students;
