@@ -1,4 +1,5 @@
 import * as React from "react";
+import '../css/addStudent.css';
 
 class AddStudent extends React.Component {
 
@@ -53,10 +54,12 @@ class AddStudent extends React.Component {
 
         return (
             <form onSubmit={this.handleSubmit}>
-                <input type='text' name='firstName' defaultValue={student.firstName} placeholder='First Name...' onChange={this.handleChange}/>
-                <input type='text' name='lastName' defaultValue={student.lastName} placeholder='Last Name...' onChange={this.handleChange}/>
-                <input type='number' name='age' defaultValue={student.age} placeholder='Age...' onChange={this.handleChange}/>
-                <button type='submit'>Submit</button>
+                <div>
+                    <input className='studentFormInput' type='text' name='firstName' defaultValue={student.firstName} placeholder='First Name...' onChange={this.handleChange}/>
+                    <input className='studentFormInput' type='text' name='lastName' defaultValue={student.lastName} placeholder='Last Name...' onChange={this.handleChange}/>
+                    <input className='studentFormInput' type='number' name='age' defaultValue={student.age} placeholder='Age...' onChange={this.handleChange}/>
+                    <button type='submit'>Add Student</button>
+                </div>
             </form>
         );
     }

@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6f66d26-1199-48b1-8d42-4eadbb157b12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/component/AddStudent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/addStudent.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Group.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Group.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/GroupList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/GroupList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/StudentTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/StudentTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Teacher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Teacher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/TeacherRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/TeacherRow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/TeacherTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/TeacherTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/teacher.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/teacher.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/AddStudent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/AddStudent.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
