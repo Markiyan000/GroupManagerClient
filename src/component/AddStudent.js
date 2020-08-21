@@ -32,6 +32,7 @@ class AddStudent extends React.Component {
             },
             body: JSON.stringify(student)
         });
+
         window.location.href = `/groups/${groupId}`;
     }
 
