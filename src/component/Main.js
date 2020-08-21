@@ -3,9 +3,6 @@ import '../App.css';
 import Header from "./Header";
 
 class Main extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (

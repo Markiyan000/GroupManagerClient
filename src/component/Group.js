@@ -30,7 +30,7 @@ class Group extends React.Component {
             return <h1>Loading...</h1>
         }
 
-        const {name, dateOfCreation, curator, students} = this.state.group;
+        const {id, name, dateOfCreation, curator, students} = this.state.group;
 
         return (
             <div>
@@ -43,8 +43,8 @@ class Group extends React.Component {
                     <span>Date Of Creation: {dateOfCreation}</span>
                     <span>Curator: {curator.firstName + ' ' + curator.lastName}</span>
                 </div>
-                <StudentTable students={students} />
-                <AddStudent groupId={this.state.group.id} />
+                <StudentTable students={students}/>
+                <AddStudent groupId={id}/>
             </div>
         );
     }

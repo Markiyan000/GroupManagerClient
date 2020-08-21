@@ -23,7 +23,6 @@ class AddStudent extends React.Component {
     async handleSubmit(event) {
         event.preventDefault();
         const {student} = this.state;
-        console.log(student);
         const groupId = this.props.groupId;
         await fetch(`http://localhost:8080/students/${groupId}`, {
             method: 'POST',
@@ -33,7 +32,7 @@ class AddStudent extends React.Component {
             },
             body: JSON.stringify(student)
         });
-        window.location.href = `/groups/${this.props.groupId}`;
+        window.location.href = `/groups/${groupId}`;
     }
 
     handleChange(event) {
@@ -42,7 +41,6 @@ class AddStudent extends React.Component {
         const name = target.name;
         let student = {...this.state.student};
         student[name] = value;
-        console.log(student);
         this.setState({
            student: student
         });

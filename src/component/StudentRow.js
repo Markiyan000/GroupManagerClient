@@ -2,10 +2,6 @@ import * as React from "react";
 
 class StudentRow extends React.Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     render() {
 
         const {student} = this.props;
