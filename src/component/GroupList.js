@@ -2,6 +2,7 @@ import * as React from "react";
 import '../css/groupList.css';
 import Header from "./Header";
 import {Link} from "react-router-dom";
+import AddGroup from "./AddGroup";
 
 class GroupList extends React.Component {
 
@@ -36,6 +37,7 @@ class GroupList extends React.Component {
                         )
                     })}
                 </div>
+                <AddGroup />
             </div>
         )
     }
