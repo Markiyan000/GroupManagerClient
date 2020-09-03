@@ -10,7 +10,8 @@ class Group extends React.Component {
 
         this.state = {
             group: {},
-            isLoading: true
+            isLoading: true,
+            hasCurator: false
         }
     }
 
@@ -18,9 +19,11 @@ class Group extends React.Component {
         const groupId = this.props.match.params.id;
         const response = await fetch(`http://localhost:8080/groups/${groupId}`);
         const body = await response.json();
+        const hasCurator = body.curator !== null;
         this.setState({
             group: body,
-            isLoading: false
+            isLoading: false,
+            hasCurator: hasCurator
         });
     }
 
@@ -30,7 +33,11 @@ class Group extends React.Component {
             return <h1>Loading...</h1>
         }
 
-        const {id, name, dateOfCreation, curator, students} = this.state.group;
+        const {id, name, dateOfCreation, students} = this.state.group;
+        let curator;
+        if(this.state.group.curator != null) {
+            curator = this.state.group.curator;
+        }
 
         return (
             <div>
@@ -41,7 +48,10 @@ class Group extends React.Component {
                 <div id='groupInfo'>
                     <span>Name: {name}</span>
                     <span>Date Of Creation: {dateOfCreation}</span>
-                    <span>Curator: {curator.firstName + ' ' + curator.lastName}</span>
+                    {
+                        this.state.hasCurator ? <span>Curator: {curator.firstName + ' ' + curator.lastName}</span> :
+                            <span>No Curator!</span>
+                    }
                 </div>
                 <StudentTable students={students} groupId={id}/>
                 <AddStudent groupId={id}/>

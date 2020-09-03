@@ -23,9 +23,6 @@ class AddGroup extends React.Component {
 
         const group = this.state.group;
 
-        console.log(group);
-        alert('d');
-
         await fetch(`http://localhost:8080/groups/`, {
             method: 'POST',
             headers: {
