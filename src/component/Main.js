@@ -1,13 +1,15 @@
 import React from 'react';
-import '../App.css';
+import '../css/main.css';
 import Header from "./Header";
+import UniversityImage from "./UniversityImage";
 
 class Main extends React.Component {
 
     render() {
         return (
             <div>
-                <Header />,
+                <Header />
+                <UniversityImage />
             </div>
         );
     }
