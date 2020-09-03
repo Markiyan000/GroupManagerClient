@@ -21,3 +21,11 @@ table th {
     background-color: #4CAF50;
     color: white;
 }
+
+#transfer {
+    background-color: blue;
+}
+
+#delete {
+    background-color: red;
+}

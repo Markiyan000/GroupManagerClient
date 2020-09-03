@@ -4,9 +4,13 @@ import "../css/table.css";
 
 class StudentTable extends React.Component {
 
+    constructor(props) {
+        super(props);
+    }
+
     render() {
 
-        const students = this.props.students;
+        const {students, groupId} = this.props;
 
         return (
             <div>
@@ -16,11 +20,13 @@ class StudentTable extends React.Component {
                             <th>First Name</th>
                             <th>Last Name</th>
                             <th>Age</th>
+                            <th id={'transfer'}>Transfer</th>
+                            <th id={'delete'}>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
                         {students.map((student) => {
-                            return (<StudentRow student={student} key={student.id}/>)
+                            return (<StudentRow student={student} key={student.id} groupId={groupId}/>)
                         })}
                     </tbody>
                 </table>

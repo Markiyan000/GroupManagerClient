@@ -43,7 +43,7 @@ class Group extends React.Component {
                     <span>Date Of Creation: {dateOfCreation}</span>
                     <span>Curator: {curator.firstName + ' ' + curator.lastName}</span>
                 </div>
-                <StudentTable students={students}/>
+                <StudentTable students={students} groupId={id}/>
                 <AddStudent groupId={id}/>
             </div>
         );
