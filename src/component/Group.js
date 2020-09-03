@@ -3,10 +3,14 @@ import Header from "./Header";
 import '../css/group.css';
 import StudentTable from "./StudentTable";
 import AddStudent from "./AddStudent";
+import ChoosingCurator from "./ChoosingCurator";
 
 class Group extends React.Component {
+
     constructor(props) {
         super(props);
+
+        this.notCurators = [];
 
         this.state = {
             group: {},
@@ -35,7 +39,7 @@ class Group extends React.Component {
 
         const {id, name, dateOfCreation, students} = this.state.group;
         let curator;
-        if(this.state.group.curator != null) {
+        if (this.state.group.curator != null) {
             curator = this.state.group.curator;
         }
 
@@ -49,8 +53,9 @@ class Group extends React.Component {
                     <span>Name: {name}</span>
                     <span>Date Of Creation: {dateOfCreation}</span>
                     {
-                        this.state.hasCurator ? <span>Curator: {curator.firstName + ' ' + curator.lastName}</span> :
-                            <span>No Curator!</span>
+                        this.state.hasCurator ?
+                            <span>Curator: {curator.firstName + ' ' + curator.lastName}</span> :
+                            <ChoosingCurator groupId={id}/>
                     }
                 </div>
                 <StudentTable students={students} groupId={id}/>
