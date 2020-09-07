@@ -1,3 +1,5 @@
+# GroupManager
+
 GroupManager is a project that facilitate the management of students, groups and teachers in the university.
 
 This is a client-side part of GroupManager project. It is React.js application, whose task is to build a good UI design and provide interaction with user.
