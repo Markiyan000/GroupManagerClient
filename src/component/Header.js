@@ -12,6 +12,7 @@ class Header extends React.Component {
                     <Link to='/' className="active">Home</Link>
                     <Link to='/teachers' className="active">Teachers</Link>
                     <Link to='/groups' className="active">Groups</Link>
+                    <Link to='/studentsWithoutGroup' className="active">Students</Link>
                 </div>
             </div>
         )
