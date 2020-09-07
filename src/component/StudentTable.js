@@ -12,25 +12,23 @@ class StudentTable extends React.Component {
 
         const {students, groupId} = this.props;
 
-        console.log(students);
-
         return (
             <div>
                 <table>
                     <thead>
-                        <tr>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Age</th>
-                            <th>Transfer</th>
-                            <th>Delete</th>
-                        </tr>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                        <th id={'transfer'}>Transfer</th>
+                        <th id={'delete'}>Delete</th>
+                    </tr>
                     </thead>
                     <tbody>
-                        {students.map((student) => (
-                            <StudentRow student={student} key={student.id} groupId={groupId}/>
-                            ))
-                        }
+                    {students.map((student) => (
+                        <StudentRow student={student} key={student.id} groupId={groupId}/>
+                    ))
+                    }
                     </tbody>
                 </table>
             </div>

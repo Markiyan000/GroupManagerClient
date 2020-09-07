@@ -15,7 +15,6 @@ class StudentRow extends React.Component {
     async handleTransferClick(event) {
         event.preventDefault();
         const studentId = this.props.student.id;
-        const groupId = this.props.groupId;
         const groupName = prompt('Please, choose group');
 
         if (groupName == null) {
@@ -26,7 +25,7 @@ class StudentRow extends React.Component {
             method: 'GET'
         });
 
-        window.location.href = `/groups/${groupId}`;
+        window.location.href = `/groups/`;
     }
 
     askAboutDeleting() {
@@ -47,7 +46,12 @@ class StudentRow extends React.Component {
             method: 'DELETE',
         });
 
-        window.location.href = `/groups/${groupId}`;
+        if (groupId !== undefined) {
+            window.location.href = `/groups/${groupId}`;
+        } else {
+            window.location.href = `/studentsWithoutGroup`;
+        }
+
     }
 
 
