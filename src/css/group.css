@@ -6,6 +6,27 @@
     font-weight: 500;
 }
 
+#group__inner {
+    display: flex;
+    text-align: center;
+}
+
+.delete__button {
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 150px;
+    height: 50px;
+    border: 0;
+    transition: background-color .1s linear;
+}
+
+.delete__button:hover {
+    background-color: darkred;
+}
+
 #name {
     margin: auto;
     width: 15%;

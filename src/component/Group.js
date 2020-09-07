@@ -69,15 +69,17 @@ class Group extends React.Component {
                 <div id='name'>
                     <strong>{name}</strong>
                 </div>
-                <button onClick={this.handleDelete}>Delete</button>
-                <div id='groupInfo'>
-                    <span>Name: {name}</span>
-                    <span>Date Of Creation: {dateOfCreation}</span>
-                    {
-                        this.state.hasCurator ?
-                            <span>Curator: {curator.firstName + ' ' + curator.lastName}</span> :
-                            <ChoosingCurator groupId={id}/>
-                    }
+                <div id='group__inner'>
+                    <div id='groupInfo'>
+                        <span>Name: {name}</span>
+                        <span>Date Of Creation: {dateOfCreation}</span>
+                        {
+                            this.state.hasCurator ?
+                                <span>Curator: {curator.firstName + ' ' + curator.lastName}</span> :
+                                <ChoosingCurator groupId={id}/>
+                        }
+                    </div>
+                    <button onClick={this.handleDelete} className={'delete__button'}>Delete</button>
                 </div>
                 <StudentTable students={students} groupId={id}/>
                 <AddStudent groupId={id}/>
