@@ -17,6 +17,8 @@ class Group extends React.Component {
             isLoading: true,
             hasCurator: false
         }
+
+        this.handleDelete = this.handleDelete.bind(this);
     }
 
     async componentDidMount() {
@@ -29,6 +31,24 @@ class Group extends React.Component {
             isLoading: false,
             hasCurator: hasCurator
         });
+    }
+
+    askAboutDeleting() {
+        return window.confirm(`Dou you really want to delete group ${this.state.group.name} ?`);
+    }
+
+    async handleDelete() {
+        const groupId = this.state.group.id;
+
+        if(!this.askAboutDeleting()) {
+            return;
+        }
+
+        await fetch(`http://localhost:8080/groups/${groupId}`, {
+            method: 'DELETE'
+        });
+
+        window.location.href = '/groups';
     }
 
     render() {
@@ -49,6 +69,7 @@ class Group extends React.Component {
                 <div id='name'>
                     <strong>{name}</strong>
                 </div>
+                <button onClick={this.handleDelete}>Delete</button>
                 <div id='groupInfo'>
                     <span>Name: {name}</span>
                     <span>Date Of Creation: {dateOfCreation}</span>
