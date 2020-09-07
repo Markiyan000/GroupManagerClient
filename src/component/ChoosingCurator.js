@@ -1,4 +1,5 @@
 import * as React from "react";
+import '../css/choosingCurator.css'
 
 class ChoosingCurator extends React.Component {
 
@@ -51,8 +52,7 @@ class ChoosingCurator extends React.Component {
         }
 
         return (
-            <div>
-                <span>No Curator!</span>
+            <div id={'main__div'}>
                 <form onSubmit={this.handleSubmit}>
                     <select onChange={this.handleChange}>
                         {

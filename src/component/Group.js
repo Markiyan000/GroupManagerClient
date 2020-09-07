@@ -16,7 +16,7 @@ class Group extends React.Component {
             group: {},
             isLoading: true,
             hasCurator: false
-        }
+        };
 
         this.handleDelete = this.handleDelete.bind(this);
     }
@@ -34,7 +34,7 @@ class Group extends React.Component {
     }
 
     askAboutDeleting() {
-        return window.confirm(`Dou you really want to delete group ${this.state.group.name} ?`);
+        return window.confirm(`Do you really want to delete group ${this.state.group.name} ?`);
     }
 
     async handleDelete() {
@@ -73,14 +73,14 @@ class Group extends React.Component {
                     <div id='groupInfo'>
                         <span>Name: {name}</span>
                         <span>Date Of Creation: {dateOfCreation}</span>
-                        {
-                            this.state.hasCurator ?
-                                <span>Curator: {curator.firstName + ' ' + curator.lastName}</span> :
-                                <ChoosingCurator groupId={id}/>
-                        }
                     </div>
                     <button onClick={this.handleDelete} className={'delete__button'}>Delete</button>
                 </div>
+                {
+                    this.state.hasCurator ?
+                        <span>Curator: {curator.firstName + ' ' + curator.lastName}</span> :
+                        <ChoosingCurator groupId={id}/>
+                }
                 <StudentTable students={students} groupId={id}/>
                 <AddStudent groupId={id}/>
             </div>
