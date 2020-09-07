@@ -1,12 +1,15 @@
 #groupList {
-    display: table;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     table-layout: fixed;
     border-spacing: 10px;
 }
 
 #group {
-    display: table-cell;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 200px;
     background-color: #85C1E9;
     border: 3px solid black;
     text-align: center;
