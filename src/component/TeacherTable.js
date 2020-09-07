@@ -1,6 +1,7 @@
 import * as React from "react";
 import Header from "./Header";
 import TeacherRow from "./TeacherRow";
+import AddTeacher from "./AddTeacher";
 
 class TeacherTable extends React.Component {
 
@@ -47,6 +48,7 @@ class TeacherTable extends React.Component {
                         }
                     </tbody>
                 </table>
+                <AddTeacher />
             </div>
         );
     }

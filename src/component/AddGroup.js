@@ -33,7 +33,6 @@ class AddGroup extends React.Component {
         });
 
         window.location.href = `/groups`;
-
     }
 
     handleChange(event) {
