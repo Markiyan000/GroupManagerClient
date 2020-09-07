@@ -6,4 +6,4 @@ This is a client-side part of GroupManager project. It is React.js application, 
 The whole application is splitted into components which represent the data which were fetched from REST API. Interaction with user happens with help of library that consist of navigational components - react-router.
 
 Technologies:
-  - Client Side: HTML, CSS, Flexbox, React
+  - Client Side: HTML, CSS, Flexbox, React.js
